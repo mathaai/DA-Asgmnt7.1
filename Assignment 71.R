@@ -17,6 +17,13 @@ for(i in 1:ncol(mtcars)) {
   plot(sort(mtcars[,i]),p_mpg, type = "l", xlab = colnames(mtcars)[i])
 }
 
+for(i in 1:ncol(mtcars)) {
+  print(colnames(mtcars)[i])
+  print(table((mtcars[,i])))
+}
+#normal distribution : mpg, cyl, disp, hp,drat, wt
+#binomial Distribution vs, am
+#discrete distribution : cyl, gear, carb
 
 
 # 3. Write a program to create boxplot for all variables
